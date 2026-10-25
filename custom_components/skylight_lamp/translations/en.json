@@ -1,0 +1,196 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Skylight lamp",
+        "description": "Enter the IP address of the lamp in your local network. You can find it in your router or in the SLcontrol app. Give the lamp a fixed DHCP address.",
+        "data": {
+          "host": "Host"
+        },
+        "data_description": {
+          "host": "IP address or host name of the lamp, e.g. 192.168.1.50"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the lamp. Check the address and that the lamp is connected to Wi-Fi."
+    },
+    "abort": {
+      "already_configured": "This lamp is already configured."
+    }
+  },
+  "entity": {
+    "button": {
+      "resume_schedule": {
+        "name": "Resume schedule"
+      }
+    },
+    "light": {
+      "lamp": {
+        "state_attributes": {
+          "effect": {
+            "state": {
+              "a1": "A1 · Blue",
+              "a2": "A2 · Light blue",
+              "a3": "A3 · Sky blue",
+              "a4": "A4 · Ice blue",
+              "a5": "A5 · Mint white",
+              "a6": "A6 · Green-tinted white",
+              "a7": "A7 · Pale green",
+              "a8": "A8 · Pistachio",
+              "a9": "A9 · Light lime",
+              "a10": "A10 · Lime",
+              "b1": "B1 · Cornflower",
+              "b2": "B2 · Light cornflower",
+              "b3": "B3 · Lavender blue",
+              "b4": "B4 · Cool white",
+              "b5": "B5 · Neutral white",
+              "b6": "B6 · Cream white",
+              "b7": "B7 · Vanilla",
+              "b8": "B8 · Pale yellow",
+              "b9": "B9 · Lemon",
+              "b10": "B10 · Yellow-green",
+              "c1": "C1 · Indigo",
+              "c2": "C2 · Lavender",
+              "c3": "C3 · Pale lavender",
+              "c4": "C4 · Lavender white",
+              "c5": "C5 · Pinkish white",
+              "c6": "C6 · Warm white",
+              "c7": "C7 · Light cream",
+              "c8": "C8 · Cream",
+              "c9": "C9 · Straw",
+              "c10": "C10 · Yellow",
+              "d1": "D1 · Violet",
+              "d2": "D2 · Lilac",
+              "d3": "D3 · Light lilac",
+              "d4": "D4 · Lilac white",
+              "d5": "D5 · Pink white",
+              "d6": "D6 · Peach white",
+              "d7": "D7 · Beige",
+              "d8": "D8 · Light apricot",
+              "d9": "D9 · Light gold",
+              "d10": "D10 · Golden yellow",
+              "e1": "E1 · Purple",
+              "e2": "E2 · Light purple",
+              "e3": "E3 · Heather",
+              "e4": "E4 · Light heather",
+              "e5": "E5 · Pale violet",
+              "e6": "E6 · Powder pink",
+              "e7": "E7 · Light salmon",
+              "e8": "E8 · Salmon",
+              "e9": "E9 · Apricot",
+              "e10": "E10 · Gold",
+              "f1": "F1 · Magenta",
+              "f2": "F2 · Orchid",
+              "f3": "F3 · Light orchid",
+              "f4": "F4 · Pink lilac",
+              "f5": "F5 · Pale pink lilac",
+              "f6": "F6 · Pink mist",
+              "f7": "F7 · Pink",
+              "f8": "F8 · Rose",
+              "f9": "F9 · Peach",
+              "f10": "F10 · Amber"
+            }
+          }
+        }
+      }
+    },
+    "number": {
+      "intensity": {
+        "name": "Intensity"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Mode",
+        "state": {
+          "schedule": "Schedule",
+          "manual": "Manual",
+          "demo": "Demo",
+          "off": "Off"
+        }
+      },
+      "colour": {
+        "name": "Colour",
+        "state": {
+          "a1": "A1 · Blue",
+          "a2": "A2 · Light blue",
+          "a3": "A3 · Sky blue",
+          "a4": "A4 · Ice blue",
+          "a5": "A5 · Mint white",
+          "a6": "A6 · Green-tinted white",
+          "a7": "A7 · Pale green",
+          "a8": "A8 · Pistachio",
+          "a9": "A9 · Light lime",
+          "a10": "A10 · Lime",
+          "b1": "B1 · Cornflower",
+          "b2": "B2 · Light cornflower",
+          "b3": "B3 · Lavender blue",
+          "b4": "B4 · Cool white",
+          "b5": "B5 · Neutral white",
+          "b6": "B6 · Cream white",
+          "b7": "B7 · Vanilla",
+          "b8": "B8 · Pale yellow",
+          "b9": "B9 · Lemon",
+          "b10": "B10 · Yellow-green",
+          "c1": "C1 · Indigo",
+          "c2": "C2 · Lavender",
+          "c3": "C3 · Pale lavender",
+          "c4": "C4 · Lavender white",
+          "c5": "C5 · Pinkish white",
+          "c6": "C6 · Warm white",
+          "c7": "C7 · Light cream",
+          "c8": "C8 · Cream",
+          "c9": "C9 · Straw",
+          "c10": "C10 · Yellow",
+          "d1": "D1 · Violet",
+          "d2": "D2 · Lilac",
+          "d3": "D3 · Light lilac",
+          "d4": "D4 · Lilac white",
+          "d5": "D5 · Pink white",
+          "d6": "D6 · Peach white",
+          "d7": "D7 · Beige",
+          "d8": "D8 · Light apricot",
+          "d9": "D9 · Light gold",
+          "d10": "D10 · Golden yellow",
+          "e1": "E1 · Purple",
+          "e2": "E2 · Light purple",
+          "e3": "E3 · Heather",
+          "e4": "E4 · Light heather",
+          "e5": "E5 · Pale violet",
+          "e6": "E6 · Powder pink",
+          "e7": "E7 · Light salmon",
+          "e8": "E8 · Salmon",
+          "e9": "E9 · Apricot",
+          "e10": "E10 · Gold",
+          "f1": "F1 · Magenta",
+          "f2": "F2 · Orchid",
+          "f3": "F3 · Light orchid",
+          "f4": "F4 · Pink lilac",
+          "f5": "F5 · Pale pink lilac",
+          "f6": "F6 · Pink mist",
+          "f7": "F7 · Pink",
+          "f8": "F8 · Rose",
+          "f9": "F9 · Peach",
+          "f10": "F10 · Amber"
+        }
+      }
+    },
+    "sensor": {
+      "schedule_level": {
+        "name": "Schedule level"
+      },
+      "wifi_signal": {
+        "name": "Wi-Fi signal"
+      },
+      "lamp_clock": {
+        "name": "Lamp clock"
+      }
+    },
+    "switch": {
+      "manual_permanent": {
+        "name": "Keep manual mode on"
+      }
+    }
+  }
+}

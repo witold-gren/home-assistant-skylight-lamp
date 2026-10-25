@@ -1,0 +1,18 @@
+{
+  "domain": "skylight_lamp",
+  "name": "Skylight Lamp",
+  "after_dependencies": [
+    "frontend",
+    "http"
+  ],
+  "codeowners": [
+    "@witold-gren"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/witold-gren/home-assistant-skylight-lamp",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/witold-gren/home-assistant-skylight-lamp/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

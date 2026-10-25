@@ -1,0 +1,196 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Lampa Skylight",
+        "description": "Podaj adres IP lampy w sieci lokalnej. Znajdziesz go w routerze lub w aplikacji SLcontrol. Najlepiej przypisz lampie stały adres w DHCP.",
+        "data": {
+          "host": "Host"
+        },
+        "data_description": {
+          "host": "Adres IP lub nazwa hosta lampy, np. 192.168.1.50"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nie można połączyć się z lampą. Sprawdź adres i czy lampa jest połączona z Wi-Fi."
+    },
+    "abort": {
+      "already_configured": "Ta lampa jest już skonfigurowana."
+    }
+  },
+  "entity": {
+    "button": {
+      "resume_schedule": {
+        "name": "Wróć do harmonogramu"
+      }
+    },
+    "light": {
+      "lamp": {
+        "state_attributes": {
+          "effect": {
+            "state": {
+              "a1": "A1 · Niebieski",
+              "a2": "A2 · Jasnoniebieski",
+              "a3": "A3 · Błękitny",
+              "a4": "A4 · Lodowy błękit",
+              "a5": "A5 · Miętowa biel",
+              "a6": "A6 · Zielonkawa biel",
+              "a7": "A7 · Jasnozielony",
+              "a8": "A8 · Pistacjowy",
+              "a9": "A9 · Jasna limonka",
+              "a10": "A10 · Limonkowy",
+              "b1": "B1 · Chabrowy",
+              "b2": "B2 · Jasnochabrowy",
+              "b3": "B3 · Lawendowy błękit",
+              "b4": "B4 · Chłodna biel",
+              "b5": "B5 · Neutralna biel",
+              "b6": "B6 · Kremowa biel",
+              "b7": "B7 · Waniliowy",
+              "b8": "B8 · Jasnożółty",
+              "b9": "B9 · Cytrynowy",
+              "b10": "B10 · Żółtozielony",
+              "c1": "C1 · Indygo",
+              "c2": "C2 · Lawendowy",
+              "c3": "C3 · Jasnolawendowy",
+              "c4": "C4 · Lawendowa biel",
+              "c5": "C5 · Różowawa biel",
+              "c6": "C6 · Ciepła biel",
+              "c7": "C7 · Jasnokremowy",
+              "c8": "C8 · Kremowy",
+              "c9": "C9 · Słomkowy",
+              "c10": "C10 · Żółty",
+              "d1": "D1 · Fioletowy",
+              "d2": "D2 · Liliowy",
+              "d3": "D3 · Jasnoliliowy",
+              "d4": "D4 · Liliowa biel",
+              "d5": "D5 · Różowa biel",
+              "d6": "D6 · Brzoskwiniowa biel",
+              "d7": "D7 · Beżowy",
+              "d8": "D8 · Jasnomorelowy",
+              "d9": "D9 · Jasnozłoty",
+              "d10": "D10 · Złotożółty",
+              "e1": "E1 · Purpurowy",
+              "e2": "E2 · Jasnopurpurowy",
+              "e3": "E3 · Wrzosowy",
+              "e4": "E4 · Jasnowrzosowy",
+              "e5": "E5 · Bladofiołkowy",
+              "e6": "E6 · Pudrowy róż",
+              "e7": "E7 · Jasnołososiowy",
+              "e8": "E8 · Łososiowy",
+              "e9": "E9 · Morelowy",
+              "e10": "E10 · Złoty",
+              "f1": "F1 · Magenta",
+              "f2": "F2 · Orchidea",
+              "f3": "F3 · Jasna orchidea",
+              "f4": "F4 · Różowoliliowy",
+              "f5": "F5 · Bladoróżowoliliowy",
+              "f6": "F6 · Różowa mgiełka",
+              "f7": "F7 · Różowy",
+              "f8": "F8 · Różany",
+              "f9": "F9 · Brzoskwiniowy",
+              "f10": "F10 · Bursztynowy"
+            }
+          }
+        }
+      }
+    },
+    "number": {
+      "intensity": {
+        "name": "Intensywność"
+      }
+    },
+    "select": {
+      "mode": {
+        "name": "Tryb",
+        "state": {
+          "schedule": "Harmonogram",
+          "manual": "Ręczny",
+          "demo": "Demo",
+          "off": "Wyłączona"
+        }
+      },
+      "colour": {
+        "name": "Barwa",
+        "state": {
+          "a1": "A1 · Niebieski",
+          "a2": "A2 · Jasnoniebieski",
+          "a3": "A3 · Błękitny",
+          "a4": "A4 · Lodowy błękit",
+          "a5": "A5 · Miętowa biel",
+          "a6": "A6 · Zielonkawa biel",
+          "a7": "A7 · Jasnozielony",
+          "a8": "A8 · Pistacjowy",
+          "a9": "A9 · Jasna limonka",
+          "a10": "A10 · Limonkowy",
+          "b1": "B1 · Chabrowy",
+          "b2": "B2 · Jasnochabrowy",
+          "b3": "B3 · Lawendowy błękit",
+          "b4": "B4 · Chłodna biel",
+          "b5": "B5 · Neutralna biel",
+          "b6": "B6 · Kremowa biel",
+          "b7": "B7 · Waniliowy",
+          "b8": "B8 · Jasnożółty",
+          "b9": "B9 · Cytrynowy",
+          "b10": "B10 · Żółtozielony",
+          "c1": "C1 · Indygo",
+          "c2": "C2 · Lawendowy",
+          "c3": "C3 · Jasnolawendowy",
+          "c4": "C4 · Lawendowa biel",
+          "c5": "C5 · Różowawa biel",
+          "c6": "C6 · Ciepła biel",
+          "c7": "C7 · Jasnokremowy",
+          "c8": "C8 · Kremowy",
+          "c9": "C9 · Słomkowy",
+          "c10": "C10 · Żółty",
+          "d1": "D1 · Fioletowy",
+          "d2": "D2 · Liliowy",
+          "d3": "D3 · Jasnoliliowy",
+          "d4": "D4 · Liliowa biel",
+          "d5": "D5 · Różowa biel",
+          "d6": "D6 · Brzoskwiniowa biel",
+          "d7": "D7 · Beżowy",
+          "d8": "D8 · Jasnomorelowy",
+          "d9": "D9 · Jasnozłoty",
+          "d10": "D10 · Złotożółty",
+          "e1": "E1 · Purpurowy",
+          "e2": "E2 · Jasnopurpurowy",
+          "e3": "E3 · Wrzosowy",
+          "e4": "E4 · Jasnowrzosowy",
+          "e5": "E5 · Bladofiołkowy",
+          "e6": "E6 · Pudrowy róż",
+          "e7": "E7 · Jasnołososiowy",
+          "e8": "E8 · Łososiowy",
+          "e9": "E9 · Morelowy",
+          "e10": "E10 · Złoty",
+          "f1": "F1 · Magenta",
+          "f2": "F2 · Orchidea",
+          "f3": "F3 · Jasna orchidea",
+          "f4": "F4 · Różowoliliowy",
+          "f5": "F5 · Bladoróżowoliliowy",
+          "f6": "F6 · Różowa mgiełka",
+          "f7": "F7 · Różowy",
+          "f8": "F8 · Różany",
+          "f9": "F9 · Brzoskwiniowy",
+          "f10": "F10 · Bursztynowy"
+        }
+      }
+    },
+    "sensor": {
+      "schedule_level": {
+        "name": "Poziom z harmonogramu"
+      },
+      "wifi_signal": {
+        "name": "Sygnał Wi-Fi"
+      },
+      "lamp_clock": {
+        "name": "Zegar lampy"
+      }
+    },
+    "switch": {
+      "manual_permanent": {
+        "name": "Tryb ręczny na stałe"
+      }
+    }
+  }
+}
