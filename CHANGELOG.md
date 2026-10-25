@@ -4,6 +4,8 @@
 
 First public release.
 
+- Entity ids are English in every Home Assistant language (`select.<lamp>_mode` instead of
+  `select.<lampa>_tryb` in a Polish installation); displayed names stay translated.
 - Local control of Skylight Wi-Fi aquarium lamps (SLcontrol), set up from the UI by IP
   address; the lamp is identified by its MAC address.
 - Light with brightness, RGB colour and effects: the 60 colours of the SLcontrol palette

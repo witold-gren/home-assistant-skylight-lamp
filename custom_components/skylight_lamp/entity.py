@@ -7,6 +7,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN, MANUFACTURER
 from .coordinator import SkylightCoordinator
+from .entity_ids import english_object_id
 
 
 class SkylightEntity(CoordinatorEntity[SkylightCoordinator]):
@@ -26,4 +27,14 @@ class SkylightEntity(CoordinatorEntity[SkylightCoordinator]):
             manufacturer=MANUFACTURER,
             model=info.model or None,
             name=info.name or info.model or "Skylight",
+        )
+
+    @property
+    def suggested_object_id(self) -> str | None:
+        """English name for the entity id in every HA language (the shown name is translated)."""
+        return english_object_id(
+            self.platform.domain,
+            self.translation_key,
+            self.device_class,
+            super().suggested_object_id,
         )

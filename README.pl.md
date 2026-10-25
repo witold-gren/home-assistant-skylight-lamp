@@ -47,6 +47,9 @@ ponownie z nowym adresem, a integracja zaktualizuje istniejący wpis.
 
 ## Encje
 
+Identyfikatory encji są angielskie w każdym języku Home Assistant (np. `select.<lamp>_mode`
+także w polskiej instalacji, a nie `select.<lampa>_tryb`); nazwy wyświetlane są przetłumaczone.
+
 | Encja | Opis |
 |---|---|
 | `light.<lampa>` | Włącz / jasność / kolor / efekt → tryb ręczny. Kolor z koła barw jest dopasowywany do najbliższej barwy z palety, a światło pokazuje barwę, która świeci (także z harmonogramu). Efekty to barwy z palety SLcontrol (np. „F10 · Bursztynowy”). Wyłącz → lampa wyłączona. Stan pokazuje faktyczny poziom: w trybie harmonogramu – poziom wynikający z harmonogramu w tej chwili. |

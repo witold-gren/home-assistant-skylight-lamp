@@ -45,6 +45,9 @@ with the new address and the existing entry is updated.
 
 ## Entities
 
+Entity IDs are English in every Home Assistant language (e.g. `select.<lamp>_mode` also in a
+Polish installation, not `select.<lampa>_tryb`); the displayed names are translated.
+
 | Entity | Description |
 |---|---|
 | `light.<lamp>` | Turn on / brightness / colour / effect → manual mode. A colour from the colour wheel is matched to the closest palette colour, and the light shows the colour it is lit with (also from the schedule). Effects are the colours of the SLcontrol palette (e.g. "F10 · Amber"). Turn off → lamp off. The state shows the real level: in schedule mode, the level the schedule asks for right now. |
